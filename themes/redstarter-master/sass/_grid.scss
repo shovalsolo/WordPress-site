@@ -1,0 +1,26 @@
+/*--------grid------------*/
+
+.grid{
+	display:grid;
+}
+
+.grid-temp-col{
+	grid-template-columns:70% 30%;
+}
+
+/*--------grid-gap-----------*/
+
+.grid-gap-sml{
+	grid-gap:1em;
+}	
+
+.grid-gap-med{
+	grid-gap:3em;
+}
+
+.grid-gap-lar{
+	grid-gap:3em;
+}
+
+
+	
