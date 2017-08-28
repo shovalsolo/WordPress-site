@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-<?php echo "page"; ?>
+<!-- <?php echo "page"; ?> -->
 <!-- presenting pages -->
 
 	<div id="primary" class="content-area">

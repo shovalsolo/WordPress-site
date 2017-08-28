@@ -330,8 +330,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 .banner-menu{
 	font-size: 1.25rem;
 	padding: 1rem 0 0 0;
+	
 }
 
 .contact-info{
 	width: 70%;
+}
+
+.menu-pos{
+	position: absolute;
 }

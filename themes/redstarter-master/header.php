@@ -26,7 +26,17 @@
 			<header id="masthead" class="site-header" role="banner">
 			<!-- Creating the banner calling get_banner from functions.php -->
 
-		
+	<!-- 	 <?php
+        //if (is_front_page()) {
+        //    $img=get_field('banner');
+        //    if(get_field('banner-logo'))
+        //    	$logo=get_field('banner-logo');
+        
+        //}elseif (get_field('banner')) {
+        //	$img=get_field('banner');
+        //}
+
+         ?> -->
 
 			
 			<!-- END of calling banner -->
@@ -40,12 +50,12 @@
 				<!-- the menu navigation journal home shop-->
 				<div class="flex banner-menu">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="flex flex-jus-end">
+				<div class="flex flex-jus-end menu-pos">
 					
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<div id="search_icon">
-					<i class="fa fa-search" id="fa-search" aria-hidden="true" onclick="showHideSearch()"></i>
+					<i class="fa fa-search bluecolor" id="fa-search" aria-hidden="true" onclick="showHideSearch()"></i>
 					</div>
 					<div id="header-search"><?php get_search_form();?></div>
 

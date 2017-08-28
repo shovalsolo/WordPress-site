@@ -299,14 +299,14 @@ register_sidebar(array(
 }
 
 
-// function changeNavColor($Nav) {
-//              if(get_field("banner")){
-//                $Nav[] = 'whiteNav';
-//            }
-//            return $Nav;
-//         }
+function changeNavColor($Nav) {
+             if(get_field("banner")){
+               $Nav[] = 'whiteNav';
+           }
+           return $Nav;
+        }
 
-//         add_filter('body_class', 'changeNavColor');
+        add_filter('body_class', 'changeNavColor');
 
 
 add_action( 'wp_default_scripts', function( $scripts ) {
@@ -318,30 +318,5 @@ add_action( 'wp_default_scripts', function( $scripts ) {
 
 //----------------------------------------
 
-
-
-// function theme_slug_widgets_init() {
-//    register_sidebar( array(
-//        'name' => __( 'Footer', 'wpf' ),
-//        'id' => 'footer-1',
-//        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-//        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-//     'after_widget'  => '</li>',
-//     'before_title'  => '<h2 class="widgettitle">',
-//     'after_title'   => '</h2>',
-//    ) );
-
-//     register_sidebar( array(
-//        'name' => __( 'Sidebar-2', 'wps' ),
-//        'id' => 'sidebar-2',
-//        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-//        'before_widget' => '<li id="%1$s" class="widget %2$s">',
-//     'after_widget'  => '</li>',
-//     'before_title'  => '<h2 class="widgettitle">',
-//     'after_title'   => '</h2>',
-//    ) );
-// }
-
-// add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
     ?>

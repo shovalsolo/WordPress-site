@@ -1,5 +1,5 @@
 <!-- Content products page is SHOP general page for all the items  -->
-<p>Content-products</p>
+<!-- <?php //echo "Content-products"; ?> -->
 
 <div class="archive-shop-stuff border-all margin-up-down"> <!--for each product box-->
     <a href="<?php the_permalink();?>">

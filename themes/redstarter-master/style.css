@@ -917,6 +917,9 @@ object {
 .light-brown-title {
   color: #d99054; }
 
+.bluecolor {
+  color: #227d77; }
+
 /*----------Border---------------*/
 .border-all {
   border: 1px solid #e1e1e1; }
@@ -1371,3 +1374,6 @@ nav ul li a {
 
 .contact-info {
   width: 70%; }
+
+.menu-pos {
+  position: absolute; }

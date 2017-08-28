@@ -3,8 +3,6 @@
 
 <?php get_header(); ?>
 
-<p>Content-about</p>
-
 	<?php echo'
 
 			<section class="banner" style="background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('.get_banner().'); background-size: cover;height: 80vh;">
