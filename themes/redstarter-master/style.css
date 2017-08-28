@@ -444,7 +444,8 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%; }
   .main-navigation ul {
     display: none;
@@ -1309,10 +1310,18 @@ nav ul li a {
   float: right; }
 
 /*------Navigation style----------*/
+.main-navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
 #primary-menu {
   display: -ms-flexbox;
   display: flex;
-  background: transparent; }
+  background: transparent;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   #primary-menu ul {
     display: -ms-flexbox;
     display: flex; }
@@ -1355,3 +1364,7 @@ nav ul li a {
 
 #header-search {
   display: none; }
+
+.banner-menu {
+  font-size: 1.25rem;
+  padding: 1rem 0 0 0; }

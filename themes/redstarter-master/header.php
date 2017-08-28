@@ -35,6 +35,7 @@
 				
 			
 				<!-- the menu navigation journal home shop-->
+				<div class="flex banner-menu">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="flex flex-jus-end">
 					
@@ -56,6 +57,7 @@
 
 				</div>
 				</nav><!-- #site-navigation -->
+				</div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">

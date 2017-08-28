@@ -213,7 +213,7 @@ function get_banner(){
     }
     elseif (get_field('banner')) {
         $img=get_field('banner');
-        the_title();
+
         //echo "banner";
     }
     else {
@@ -285,6 +285,17 @@ register_sidebar(array(
 
     ));
 
+register_sidebar(array(
+
+    'name'          => 'side',
+    'id'            => 'side',
+    'before_widget' => '<div id="%1$s" class="widget %2$s clearfix">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+
+    ));
+
 }
 
 
@@ -303,5 +314,34 @@ add_action( 'wp_default_scripts', function( $scripts ) {
         $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
     }
 } );
+
+
+//----------------------------------------
+
+
+
+// function theme_slug_widgets_init() {
+//    register_sidebar( array(
+//        'name' => __( 'Footer', 'wpf' ),
+//        'id' => 'footer-1',
+//        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+//        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+//     'after_widget'  => '</li>',
+//     'before_title'  => '<h2 class="widgettitle">',
+//     'after_title'   => '</h2>',
+//    ) );
+
+//     register_sidebar( array(
+//        'name' => __( 'Sidebar-2', 'wps' ),
+//        'id' => 'sidebar-2',
+//        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+//        'before_widget' => '<li id="%1$s" class="widget %2$s">',
+//     'after_widget'  => '</li>',
+//     'before_title'  => '<h2 class="widgettitle">',
+//     'after_title'   => '</h2>',
+//    ) );
+// }
+
+// add_action( 'widgets_init', 'theme_slug_widgets_init' );
 
     ?>

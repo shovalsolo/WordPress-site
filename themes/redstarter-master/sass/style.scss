@@ -258,9 +258,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 /*------Navigation style----------*/
+.main-navigation{
+	display: flex;
+	justify-content: flex-end;
+}
+
 #primary-menu{
     display:flex;
     background:transparent;
+    flex-wrap: wrap;
 
     ul{
         display:flex;
@@ -319,4 +325,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 #header-search{
 	display: none;
+}
+
+.banner-menu{
+	font-size: 1.25rem;
+	padding: 1rem 0 0 0;
 }

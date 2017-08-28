@@ -6,10 +6,13 @@
 <p>Content-about</p>
 
 	<?php echo'
+
 			<section class="banner" style="background: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('.get_banner().'); background-size: cover;height: 80vh;">
+			 	<div class="overlap-title flex flex-jus-cen flex-ali-cen flex-ali-sel-cen">
+				<p class="wcolor"><strong> '. get_the_title() .'</strong></p>
+				</div>
 			</section>'; 
 	?>
-
 
 
         <?php unregister_sidebar( 'sidebar-1' ); ?> <?php// Remove Sidebar from About Us Page ?>
