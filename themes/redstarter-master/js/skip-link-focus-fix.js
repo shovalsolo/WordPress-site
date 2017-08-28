@@ -36,11 +36,21 @@
 
 
 function showHideSearch(){
+	<?php echo " java script " ?>
+
+console.log("test");
+	
 	$(".fa fa-search").click(function(){
         $(".header-search").hide();
     });
     $(".fa fa-search").click(function(){
         $(".header-search").show();
     });
+
+//  $(document).ready(function(){
+//     $(".fa fa-search").click(function(){
+//         $(".header-search").toggle();
+//     });
+// });
 
 }

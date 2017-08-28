@@ -14,6 +14,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<?php wp_head(); ?>
 	</head>
@@ -39,11 +40,19 @@
 					
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<div class="search-icon">
-						<i class="fa fa-search" aria-hidden="true"></i>
-						<div class="header-search"><?php get_search_form();?></div>
-
+					<div id="search_icon">
+					<i class="fa fa-search" id="fa-search" aria-hidden="true" onclick="showHideSearch()"></i>
 					</div>
+					<div id="header-search"><?php get_search_form();?></div>
+
+<!-- a function to show hide the search -->
+					<script type="text/javascript">
+						function showHideSearch(obj){
+
+						    $("#header-search").toggle();
+
+						}
+					</script>
 
 				</div>
 				</nav><!-- #site-navigation -->

@@ -1210,6 +1210,9 @@ nav ul li a {
 .jor-btn {
   background-color: transparent; }
 
+.about-text {
+  width: 70%; }
+
 /*- style for adventures boxes -*/
 .adv-grid {
   margin: 0 8rem;
@@ -1349,3 +1352,6 @@ nav ul li a {
 
 .jor-box {
   width: 50%; }
+
+#header-search {
+  display: none; }

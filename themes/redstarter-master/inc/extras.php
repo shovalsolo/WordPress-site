@@ -213,14 +213,11 @@ function get_banner(){
     }
     elseif (get_field('banner')) {
         $img=get_field('banner');
+        the_title();
         //echo "banner";
     }
-    elseif (is_page('145')) {
-        //echo "145";
-        $img="http://localhost/redstarter/wp-content/themes/redstarter-master/assets/images/about-hero.jpg";
-    }
     else {
-        echo "no";
+        echo "no banner";
    }    
 
     return $img;
@@ -299,5 +296,12 @@ register_sidebar(array(
 //         }
 
 //         add_filter('body_class', 'changeNavColor');
+
+
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! empty( $scripts->registered['jquery'] ) ) {
+        $scripts->registered['jquery']->deps = array_diff( $scripts->registered['jquery']->deps, array( 'jquery-migrate' ) );
+    }
+} );
 
     ?>
