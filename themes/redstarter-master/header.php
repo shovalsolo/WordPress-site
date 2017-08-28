@@ -25,6 +25,9 @@
 			
 			<header id="masthead" class="site-header" role="banner">
 			<!-- Creating the banner calling get_banner from functions.php -->
+
+		
+
 			
 			<!-- END of calling banner -->
 
