@@ -11,7 +11,6 @@ get_header(); ?>
 <?php echo "<br>"?>
 <?php echo "single-product"?>
 <?php echo "<br>"?>
-<hr>
 
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php echo "<br>"?>

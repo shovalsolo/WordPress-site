@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+<p>single-adventures</p>
 
 
 <br>

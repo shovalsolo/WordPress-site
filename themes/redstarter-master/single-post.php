@@ -6,6 +6,7 @@
  */
 
 get_header(); ?>
+<p>single-post</p>
 
 <br>
 <!-- this page is presenting one single blog(journal) post  -->

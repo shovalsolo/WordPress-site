@@ -1,5 +1,3 @@
-<!-- presenting pages -->
-
 <?php
 /**
  * The template for displaying all pages.
@@ -8,6 +6,8 @@
  */
 
 get_header(); ?>
+<p>page</p>
+<!-- presenting pages -->
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

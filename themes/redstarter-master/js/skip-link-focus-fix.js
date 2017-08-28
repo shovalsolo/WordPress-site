@@ -31,3 +31,16 @@
 		}, false);
 	}
 })();
+
+
+
+
+function showHideSearch(){
+	$(".fa fa-search").click(function(){
+        $(".header-search").hide();
+    });
+    $(".fa fa-search").click(function(){
+        $(".header-search").show();
+    });
+
+}
