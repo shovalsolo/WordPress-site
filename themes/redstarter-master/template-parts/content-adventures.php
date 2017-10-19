@@ -1,5 +1,5 @@
 <!-- loops on the blogs adventures -->
-
+<!--  -->
 
 
 <div class="container grid margin-bot">

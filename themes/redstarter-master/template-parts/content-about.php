@@ -1,5 +1,5 @@
 <?php /* Template Name: About Template */ ?>
-<!--  -->
+<!-- Brings the content to the about page -->
 
 <?php get_header(); ?>
 

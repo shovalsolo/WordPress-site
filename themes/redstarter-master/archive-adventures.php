@@ -8,7 +8,8 @@
 get_header(); ?>
 
 <?php echo "<br>"; ?>
-<?php echo "archive-adventures.php"; ?>
+<?php echo "<br>"; ?>
+<!-- //<?php echo "archive-adventures.php"; ?> -->
 
 <?php
 
